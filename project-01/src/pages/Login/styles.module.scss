@@ -12,7 +12,10 @@ form {
   flex-direction: column;
   gap: 6px;
   height: 300px;
-  width: 50%;
+  width: 500px;
+  padding: 32px;
+  border: 1px solid lightgray;
+  text-align: center;
 }
 
 button {
