@@ -29,4 +29,13 @@ describe("testa a página de login", () => {
     cy.contains("Não tem cadastro? Clique aqui.").click();
     cy.contains("Cadastre-se");
   });
+
+  it("O botão deve ter 10px de margin top", () => {
+    cy.visit("/signup");
+
+    cy.get("div")
+      .find("button")
+      .should("have.css", "marginTop")
+      .and("match", /10px/);
+  });
 });
